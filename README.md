@@ -4,8 +4,6 @@ Tic Tac Toe Game Written using MEAN stack (MongoDb, Express, AngularJs, and Node
 
 The MIT License
 
-Copyright (c) 2010-2015 Google, Inc. http://angularjs.org
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
