@@ -1,0 +1,27 @@
+<div class="content">
+	<div class="players-hud-container">
+		<div class="player-hud player-hud-1" ng-class="{'active': game.playerTurn == 0}">
+			<h2>Player 1: {{game.playerName1}}</h2>
+			Score: <ul><li ng-repeat="wins in [game.playerWins1] | makeRange"><i class="fa fa-star"></i></li></ul>			
+		</div>
+		<div class="player-hud player-hud-2" ng-class="{'active': game.playerTurn == 1}">
+			<h2>Player 2: {{game.playerName2}}</h2>
+			Score: <ul><li ng-repeat="wins in [game.playerWins2] | makeRange"><i class="fa fa-star"></i></li></ul>			
+		</div>
+		<div class="clear-hud"></div>
+	</div>
+	<table class="board">
+		<tr ng-repeat="row in game.board track by $index" ng-init="rowIndex=$index">
+			<td ng-repeat="cell in row track by $index" ng-init="colIndex=$index">
+				<a href="javascript:"  ng-class="cellClass(rowIndex, colIndex)" ng-click="playerMoves(rowIndex, colIndex)"><div class="board-cell"></div></a>
+			</td>
+		</tr>
+	</table>
+	<div class="winner-box" ng-if="game.winnerNumber"> 
+		<h3 ng-if="game.winnerNumber == '0'">Yayyy! The winner is {{game.playerName1}}</h3>
+		<h3 ng-if="game.winnerNumber == '1'">Yayyy! The winner is {{game.playerName2}}</h3>	
+		<h3 ng-if="game.winnerNumber == '-1'">This game was a tie</h3>	
+		<button  class="submit-button" ng-click="replay()">Replay</button>	
+	</div>
+</div>
+

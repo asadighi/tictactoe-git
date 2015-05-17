@@ -1,0 +1,29 @@
+<div class="content">
+	<div class="welcome">
+		<h2>Welcome to Tic Tac Toe game</h2>
+	</div>
+	<div class="new-game-settings">
+
+		<div class="window">
+			<div class="header">
+				<h3>New Game</h3>
+			</div>
+			<div class="window-content">
+				<form ng-submit="newGame();">
+					<div>
+						<div>
+							<span class="fa fa-user"></span><input type="text" required placeholder="Player 1" ng-model="playerName1"> 
+						</div>
+						<div>
+							<span class="fa fa-user"></span><input type="text" required placeholder="Player 2" ng-model="playerName2"> 
+						</div>
+						<div>
+							<input type="submit" class="submit-button" value="Start New Game">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</div>
