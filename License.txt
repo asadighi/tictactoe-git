@@ -1,7 +1,3 @@
-# tictactoe-git
-Tic Tac Toe Game Written using MEAN stack (MongoDb, Express, AngularJs, and NodeJs)
-
-
 The MIT License
 
 Copyright (c) 2010-2015 Google, Inc. http://angularjs.org
