@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/tictactoe', function(err) {
+mongoose.connect('mongodb://heroku_app36958658:aogme9oj1iq7m5kae1v7h1m0ke@ds031832.mongolab.com:31832/heroku_app36958658', function(err) {
     if(err) {
         console.log('connection error', err);
     } else {
