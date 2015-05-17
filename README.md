@@ -1,6 +1,17 @@
 # tictactoe-git
 Tic Tac Toe Game Written using MEAN stack (MongoDb, Express, AngularJs, and NodeJs)
 
+download the folder
+
+execute the followings:
+
+
+npm install
+grunt
+nodemon
+
+then open the browser at localhost:3000
+
 
 The MIT License
 
